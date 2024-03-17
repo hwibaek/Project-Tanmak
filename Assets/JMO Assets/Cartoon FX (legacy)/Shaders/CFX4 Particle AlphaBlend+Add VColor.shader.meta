@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2b9ccfaa78997ac4b9f709dd47f45e7f
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 23634
+  packageName: Cartoon FX 4 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/Shaders/CFX4 Particle AlphaBlend+Add
+    VColor.shader
+  uploadId: 623843

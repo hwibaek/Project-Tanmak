@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 055899d2e5aad2145a9d0a6c98d7c436
+labels:
+- cartoonfx
+- hit
+- particles
+- directional
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Hits/CFXM_Hit_A
+    Directional Red.prefab
+  uploadId: 623840

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d9d64543c9675f2498b17b97f782bfdf
+labels:
+- particles
+- cartoonfx
+- hit
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Misc/CFXM_SoftStar.prefab
+  uploadId: 623840

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ba915a35ee420f74bb848d235be57f6b
+labels:
+- cartoonfx
+- particles
+- water
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Water/CFX_Fountain_Loop.prefab
+  uploadId: 623840

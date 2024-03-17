@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d334807fc1e68eb4d8118d3d21cee497
+labels:
+- CartoonFX
+- Toon
+- Particles
+- Dark
+- Magic
+- Aura
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Magic Dark/Color
+    Variants/CFX3_DarkMagicAura_A (Blue).prefab
+  uploadId: 623842

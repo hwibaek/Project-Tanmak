@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: efc66b85e94732147a2cc76189fb4195
+labels:
+- cartoonfx
+- ground
+- particles
+- smoke
+- trail
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Smoke/CFX_SmokeTrail.prefab
+  uploadId: 623840

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 233956b4ed08c7542be22d9342cb3595
+labels:
+- cartoonfx
+- particles
+- ground
+- hit
+- debris
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Debris Hits/CFX2_GroundRockHit.prefab
+  uploadId: 623841

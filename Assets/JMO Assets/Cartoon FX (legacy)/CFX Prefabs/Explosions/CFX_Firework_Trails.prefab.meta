@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: accd6085d9a335247b10d45b6e6a9399
+timeCreated: 1505138985
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/CFX_Firework_Trails.prefab
+  uploadId: 623840

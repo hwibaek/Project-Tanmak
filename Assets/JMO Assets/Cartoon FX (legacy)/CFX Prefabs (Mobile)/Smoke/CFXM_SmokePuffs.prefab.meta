@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9a11d672c46ec404e9f5cefad3c1102e
+labels:
+- cartoonfx
+- particles
+- poof
+- smoke
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Smoke/CFXM_SmokePuffs.prefab
+  uploadId: 623840

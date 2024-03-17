@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 22a7703b83e081e46accc1b094c01c58
+labels:
+- CartoonFX
+- Toon
+- Particles
+- Nature
+- Air
+- Hit
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs (Mobile)/Nature/Color
+    Variants/CFXM3_Hit_Leaves_A_Air (Brown).prefab
+  uploadId: 623842

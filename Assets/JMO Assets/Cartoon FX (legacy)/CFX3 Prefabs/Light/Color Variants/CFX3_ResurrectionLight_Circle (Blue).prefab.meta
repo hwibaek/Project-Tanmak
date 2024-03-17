@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f453e6385bed1df4fa2555d4bf053f63
+labels:
+- CartoonFX
+- Toon
+- Particles
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Light/Color Variants/CFX3_ResurrectionLight_Circle
+    (Blue).prefab
+  uploadId: 623842

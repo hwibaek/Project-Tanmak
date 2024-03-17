@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4248653bb6c17194a992d147a16458fc
+timeCreated: 1505140249
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/CFX_Explosion_B+Text.prefab
+  uploadId: 623840

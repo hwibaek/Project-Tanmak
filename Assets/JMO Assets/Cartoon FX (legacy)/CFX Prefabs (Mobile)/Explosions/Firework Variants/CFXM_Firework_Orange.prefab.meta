@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5072556484c5d2340a58458c7abc1552
+labels:
+- cartoonfx
+- particles
+- explosion
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Explosions/Firework
+    Variants/CFXM_Firework_Orange.prefab
+  uploadId: 623840

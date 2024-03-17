@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 78adde0cb53bd064fa5501d4d7c08895
+labels:
+- cartoonfx
+- particles
+- explosion
+- ground
+- smoke
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Explosions/Variants/CFX2_WWExplosion
+    Blue.prefab
+  uploadId: 623841

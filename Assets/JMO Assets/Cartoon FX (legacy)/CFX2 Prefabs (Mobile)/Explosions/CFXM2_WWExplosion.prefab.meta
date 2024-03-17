@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: eabed9636829a29488c587e1aea81b4d
+labels:
+- cartoonfx
+- particles
+- explosion
+- smoke
+- toon
+- ground
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs (Mobile)/Explosions/CFXM2_WWExplosion.prefab
+  uploadId: 623841

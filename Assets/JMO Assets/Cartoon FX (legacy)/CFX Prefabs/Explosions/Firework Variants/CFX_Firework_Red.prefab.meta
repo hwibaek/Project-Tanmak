@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4b0926401f58a21449454fc6bfd5b5e9
+labels:
+- cartoonfx
+- particles
+- explosion
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/Firework
+    Variants/CFX_Firework_Red.prefab
+  uploadId: 623840

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8592779914fd19542baa73050848b84d
+timeCreated: 1505137936
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Fire/CFX_Fire_Breath_NoSmoke.prefab
+  uploadId: 623840

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 10fc21a44cf09ef4b9c6ed576520bce5
+labels:
+- CartoonFX
+- Toon
+- Particles
+- Hit
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs (Mobile)/Misc/CFXM3_Hit_Misc_E_Skull.prefab
+  uploadId: 623842

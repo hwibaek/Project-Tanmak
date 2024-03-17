@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2cd2672732b3bff478f9643736874866
+timeCreated: 1506674358
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Debris Hits/CFX2_WoodHit.prefab
+  uploadId: 623841

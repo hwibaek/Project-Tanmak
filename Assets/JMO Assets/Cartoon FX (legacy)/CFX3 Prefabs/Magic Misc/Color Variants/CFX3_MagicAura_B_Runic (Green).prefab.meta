@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 58c7457b93a02ed41b7ab4c6e07a7f97
+labels:
+- CartoonFX
+- Toon
+- Particles
+- Magic
+- Aura
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Magic Misc/Color
+    Variants/CFX3_MagicAura_B_Runic (Green).prefab
+  uploadId: 623842

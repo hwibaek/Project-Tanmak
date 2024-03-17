@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f213a31b42cd11e47aabf175095777d1
+timeCreated: 1505143178
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Hits/Color
+    Variants/CFXM_Hit_D Orange.prefab
+  uploadId: 623840

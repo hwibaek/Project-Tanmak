@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 872ddcdd31d6dde4fbc4ef215f3a743c
+labels:
+- cartoonfx
+- particles
+- fire
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Fire/Color
+    Variants/CFXM_FlameC_Orange.prefab
+  uploadId: 623840

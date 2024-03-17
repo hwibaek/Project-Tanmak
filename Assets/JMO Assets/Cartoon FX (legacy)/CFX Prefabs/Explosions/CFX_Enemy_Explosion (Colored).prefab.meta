@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cc6e41e2952486045bb23f8319fb10bd
+timeCreated: 1505485340
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/CFX_Enemy_Explosion
+    (Colored).prefab
+  uploadId: 623840

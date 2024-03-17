@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2f882dd0afc5eac4eba7be3ee38a9a72
+labels:
+- cartoonfx
+- particles
+- toon
+- smoke
+- directional
+- gas
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Smoke/CFX_GasLeak
+    Looped.prefab
+  uploadId: 623840

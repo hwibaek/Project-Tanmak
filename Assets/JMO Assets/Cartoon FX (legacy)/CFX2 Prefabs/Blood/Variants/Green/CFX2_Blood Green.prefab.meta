@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c3a078cc4e2c126498f6cca4be21598d
+labels:
+- cartoonfx
+- particles
+- blood
+- directional
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Blood/Variants/Green/CFX2_Blood
+    Green.prefab
+  uploadId: 623841

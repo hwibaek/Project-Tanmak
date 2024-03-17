@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0363f447c288848418b6cd06b36796bd
+labels:
+- cartoonfx
+- particles
+- hit
+- smoke
+- toon
+- ground
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Misc/Variants/CFX2_CartoonFightGround
+    Alt Smoke.prefab
+  uploadId: 623841

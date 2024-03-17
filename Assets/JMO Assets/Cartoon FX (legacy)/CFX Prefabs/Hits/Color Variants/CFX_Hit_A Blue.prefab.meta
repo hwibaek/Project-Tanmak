@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cf3b534bec208f64ba4a3eda136f8892
+labels:
+- cartoonfx
+- particles
+- hit
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Hits/Color Variants/CFX_Hit_A
+    Blue.prefab
+  uploadId: 623840

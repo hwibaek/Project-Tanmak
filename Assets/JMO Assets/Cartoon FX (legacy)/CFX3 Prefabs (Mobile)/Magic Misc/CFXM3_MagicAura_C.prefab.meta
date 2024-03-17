@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b0370a07bce7c9a459f9381b74a3b9a9
+timeCreated: 1504799721
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 10172
+  packageName: Cartoon FX 3 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs (Mobile)/Magic Misc/CFXM3_MagicAura_C.prefab
+  uploadId: 623842

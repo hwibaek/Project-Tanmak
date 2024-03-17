@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5dfb4d370f1182742ab9e2622cf6b519
+labels:
+- toon
+- gas
+- smoke
+- directional
+- particles
+- cartoonfx
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak
+    Looped Green.prefab
+  uploadId: 623840

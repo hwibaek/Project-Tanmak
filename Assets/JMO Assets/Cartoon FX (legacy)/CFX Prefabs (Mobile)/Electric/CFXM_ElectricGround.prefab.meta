@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f71e7641f4394c44095cabfbc0c46ef9
+labels:
+- cartoonfx
+- electric
+- ground
+- mobile
+- particles
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Electric/CFXM_ElectricGround.prefab
+  uploadId: 623840

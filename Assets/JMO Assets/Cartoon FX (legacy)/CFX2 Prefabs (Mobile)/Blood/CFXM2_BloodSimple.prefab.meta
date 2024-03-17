@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a5ea43a15e0cf404c9bb077f8fae8d1e
+labels:
+- cartoonfx
+- particles
+- blood
+- directional
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs (Mobile)/Blood/CFXM2_BloodSimple.prefab
+  uploadId: 623841

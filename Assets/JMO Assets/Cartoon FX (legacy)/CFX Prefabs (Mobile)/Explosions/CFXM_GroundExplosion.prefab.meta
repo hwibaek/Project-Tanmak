@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 892c2159588dc16499fbb990ca3ceeb4
+labels:
+- cartoonfx
+- explosion
+- ground
+- mobile
+- particles
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Explosions/CFXM_GroundExplosion.prefab
+  uploadId: 623840

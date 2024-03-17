@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e60e543640bc21c4eb4a39f08158abb4
+labels:
+- cartoonfx
+- ground
+- light
+- particles
+- text
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Misc/CFXM_CircularLightWall+Text.prefab
+  uploadId: 623840

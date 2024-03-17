@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c6f0dc0eae58dbe4da95e62a8373ad23
+labels:
+- cartoonfx
+- particles
+- explosion
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/CFX_SmallExplosion.prefab
+  uploadId: 623840

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 66520dc120f404142a0a006fef962d26
+timeCreated: 1506675163
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs (Mobile)/Expressions/CFXM2_Expression_Sparkles.prefab
+  uploadId: 623841

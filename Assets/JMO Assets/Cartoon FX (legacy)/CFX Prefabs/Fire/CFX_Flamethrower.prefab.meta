@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e3f51bdcff843ab42a172b197a71296f
+timeCreated: 1505138691
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Fire/CFX_Flamethrower.prefab
+  uploadId: 623840

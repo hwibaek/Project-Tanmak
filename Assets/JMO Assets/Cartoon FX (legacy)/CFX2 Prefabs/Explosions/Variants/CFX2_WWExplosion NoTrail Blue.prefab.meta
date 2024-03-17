@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9363d761fe313e1428c788704bf8f5b1
+labels:
+- cartoonfx
+- particles
+- explosion
+- ground
+- smoke
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs/Explosions/Variants/CFX2_WWExplosion
+    NoTrail Blue.prefab
+  uploadId: 623841

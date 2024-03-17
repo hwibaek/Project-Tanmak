@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b8092493c05d6eb478410fa276d1d848
+labels:
+- cartoonfx
+- particles
+- directional
+- toon
+- smoke
+- gas
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Smoke/Color Variants/CFX_GasLeak
+    Purple.prefab
+  uploadId: 623840

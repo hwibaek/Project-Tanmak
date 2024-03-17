@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8afba8ae0938326458ff00ad47d6fb04
+labels:
+- cartoonfx
+- particles
+- explosion
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Explosions/Firework
+    Variants/CFXM_Firework_Blue.prefab
+  uploadId: 623840

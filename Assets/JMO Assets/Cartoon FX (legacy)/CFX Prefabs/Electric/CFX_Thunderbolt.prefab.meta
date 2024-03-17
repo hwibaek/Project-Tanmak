@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 774832f53bf880b488b8733943e47832
+labels:
+- cartoonfx
+- electric
+- ground
+- particles
+- thunder
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Electric/CFX_Thunderbolt.prefab
+  uploadId: 623840

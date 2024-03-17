@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8223cad3904366649b981da8992f2083
+labels:
+- cartoonfx
+- ground
+- hit
+- particles
+- toon
+- text
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Hits/CFXM_GroundHit+Text.prefab
+  uploadId: 623840

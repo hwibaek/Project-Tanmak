@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6f83fe299d72b4340a66ce5f39f3a7f3
+labels:
+- cartoonfx
+- particles
+- ground
+- hit
+- debris
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs (Mobile)/Debris Hits/Variants/CFXM2_GroundWoodHit
+    Bigger Dark.prefab
+  uploadId: 623841

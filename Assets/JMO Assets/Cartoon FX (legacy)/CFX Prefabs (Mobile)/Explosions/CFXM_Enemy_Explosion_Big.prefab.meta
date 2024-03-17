@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 055b9a89354106b4e878044d7c873d61
+timeCreated: 1505489913
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Explosions/CFXM_Enemy_Explosion_Big.prefab
+  uploadId: 623840

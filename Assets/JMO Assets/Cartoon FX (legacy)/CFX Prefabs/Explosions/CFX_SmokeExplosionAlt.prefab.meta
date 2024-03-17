@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1b2f8e049c22af2438cac65a921271a6
+labels:
+- cartoonfx
+- explosion
+- particles
+- smoke
+- toon
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs/Explosions/CFX_SmokeExplosionAlt.prefab
+  uploadId: 623840

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1b0a08f44ea1f8a4793c93cc4da89c63
+labels:
+- cartoonfx
+- explosion
+- mobile
+- particles
+- toon
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4010
+  packageName: Cartoon FX Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX Prefabs (Mobile)/Explosions/CFXM_Explosion+Text
+    NoSmoke.prefab
+  uploadId: 623840

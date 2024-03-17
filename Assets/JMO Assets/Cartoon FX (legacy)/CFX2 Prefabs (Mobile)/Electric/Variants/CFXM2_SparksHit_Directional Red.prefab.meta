@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b8b0d7ff3102bf142bd5604665a4747c
+labels:
+- cartoonfx
+- particles
+- electric
+- sparks
+- hit
+- directional
+- toon
+- mobile
+AssetOrigin:
+  serializedVersion: 1
+  productId: 4274
+  packageName: Cartoon FX 2 Remaster
+  packageVersion: R 1.3.1
+  assetPath: Assets/JMO Assets/Cartoon FX (legacy)/CFX2 Prefabs (Mobile)/Electric/Variants/CFXM2_SparksHit_Directional
+    Red.prefab
+  uploadId: 623841
