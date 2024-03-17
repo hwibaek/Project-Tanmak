@@ -169,6 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f25123625040de97402216c6608554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPointerDown: 0
+  onPointerUp: 0
   onPointer: 0
 --- !u!114 &20669552
 MonoBehaviour:
@@ -538,6 +540,9 @@ MonoBehaviour:
   coyoteTime: 0
   jumpBufferCnt: 0
   fallChecker: 0
+  canDash: 0
+  dashPower: 0
+  dashDistance: 0
   moveLock: 0
   speed: 7.5
   cc: {fileID: 341622101}
