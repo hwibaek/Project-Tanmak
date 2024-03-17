@@ -16,4 +16,3 @@ jobs:
         with:
           name: ${{ steps.getManualLicenseFile.outputs.filePath }}
           path: ${{ steps.getManualLicenseFile.outputs.filePath }}
-출처: https://sonseungha.tistory.com/568 [Developer's Delight:티스토리]
