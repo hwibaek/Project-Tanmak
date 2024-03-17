@@ -154,6 +154,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # paid assets
-Assets/Cash/*
+Assets/Cash
 Assets/Cash.meta
-Paid/*
+Paid
