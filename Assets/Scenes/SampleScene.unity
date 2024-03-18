@@ -171,7 +171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onPointerDown: 0
   onPointerUp: 0
-  onPointer: 0
 --- !u!114 &20669552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,8 +540,8 @@ MonoBehaviour:
   jumpBufferCnt: 0
   fallChecker: 0
   canDash: 0
-  dashPower: 0
-  dashDistance: 0
+  dashPower: 9
+  dashDistance: 3
   moveLock: 0
   speed: 7.5
   cc: {fileID: 341622101}
@@ -861,7 +860,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
