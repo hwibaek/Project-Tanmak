@@ -5,44 +5,46 @@ using UnityEngine.EventSystems;
 
 namespace InGame.UI
 {
-    public class InputBtn : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
+    public class InputBtn : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         public bool onPointerDown;
         public bool onPointerUp;
         public Action onDoubleClick;
+
+        public float delay;
+        
+        private bool _touched;
         
         public async void OnPointerDown(PointerEventData eventData)
         {
-            if (eventData.clickCount == 2)
+            if (_touched)
             {
-                onPointerDown = false;
-                onPointerUp = false;
-                return;
+                _touched = false;
+                onDoubleClick?.Invoke();
+            }
+            else
+            {
+                Delay();
+                _touched = true;
             }
             onPointerDown = true;
+            onPointerUp = false;
             await UniTask.Yield();
             onPointerDown = false;
         }
 
         public async void OnPointerUp(PointerEventData eventData)
         {
-            if (eventData.clickCount == 2)
-            {
-                onPointerDown = false;
-                onPointerUp = false;
-                return;
-            }
+            onPointerDown = false;
             onPointerUp = true;
             await UniTask.Yield();
             onPointerUp = false;
         }
-        
-        public void OnPointerClick(PointerEventData eventData)
+
+        private async void Delay()
         {
-            if (eventData.clickCount != 2) return;
-            onPointerUp = false;
-            onPointerDown = false;
-            onDoubleClick?.Invoke();
+            await UniTask.WaitForSeconds(delay);
+            _touched = false;
         }
     }
 }
