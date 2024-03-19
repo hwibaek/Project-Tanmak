@@ -77,6 +77,7 @@ namespace InGame.Player
                 return;
             }
 
+            canDash = true;
             coyoteTime = GameManager.Instance.CoyoteTime;
             currentJumpCnt = 0;
             fallChecker = false;
@@ -113,6 +114,7 @@ namespace InGame.Player
 
         public async void DashAsync()
         {
+            if (!canDash || dashing || moveLock) return;
             canDash = false;
             moveLock = true;
             _vv = 0;
