@@ -21,12 +21,11 @@ namespace InGame.UI
             {
                 _touched = false;
                 onDoubleClick?.Invoke();
+                return;
             }
-            else
-            {
-                Delay();
-                _touched = true;
-            }
+
+            Delay().Forget();
+            _touched = true;
             onPointerDown = true;
             onPointerUp = false;
             await UniTask.Yield();
@@ -41,7 +40,7 @@ namespace InGame.UI
             onPointerUp = false;
         }
 
-        private async void Delay()
+        private async UniTaskVoid Delay()
         {
             await UniTask.WaitForSeconds(delay);
             _touched = false;
