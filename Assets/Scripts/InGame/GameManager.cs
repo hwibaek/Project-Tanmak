@@ -47,6 +47,9 @@ namespace InGame
         
         [SerializeField] private float jumpBufferTime;
         public float JumpBufferTime => jumpBufferTime;
+
+        [SerializeField] private LayerMask groundLayer;
+        public LayerMask GroundLayer => groundLayer;
     }
 
     #endregion

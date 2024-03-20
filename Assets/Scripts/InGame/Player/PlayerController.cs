@@ -10,6 +10,11 @@ namespace InGame.Player
 
     public partial class PlayerController
     {
+        private int _animIDSpeed;
+        private int _animIDGrounded;
+        private int _animIDJump;
+        private int _animIDFreeFall;
+        
         [SerializeField] private int currentJumpCnt;
         [SerializeField] private float coyoteTime;
         [SerializeField] private float jumpBufferCnt;
@@ -31,6 +36,9 @@ namespace InGame.Player
 
         [SerializeField] private CharacterController cc;
         public CharacterController Cc => cc;
+        
+        [SerializeField] private Animator anim;
+        public Animator Anim => anim;
 
         [SerializeField] private Transform body;
         public Transform Body => body;
@@ -58,11 +66,18 @@ namespace InGame.Player
             }
             var targetDir = Quaternion.Euler(0, _targetRot, 0) * Vector3.forward;
             Cc.Move(targetDir * (targetSpeed * Time.fixedDeltaTime) + new Vector3(0, _vv * Time.fixedDeltaTime, 0));
+            Anim.SetFloat(_animIDSpeed, targetSpeed);
         }
         
         private void GroundCheck()
         {
-            if (!Cc.isGrounded)
+            var spherePosition = transform.position;
+            var grounded = Physics.CheckSphere(spherePosition, 0.28f, GameManager.Instance.GroundLayer,
+                QueryTriggerInteraction.Ignore);
+            
+            Anim.SetBool(_animIDGrounded, grounded);
+            
+            if (!grounded)
             {
                 if (coyoteTime > 0)
                 {
@@ -74,8 +89,12 @@ namespace InGame.Player
                     currentJumpCnt++;
                 }
                 _vv += Physics.gravity.y * Time.deltaTime * 2;
+                Anim.SetBool(_animIDFreeFall, true);
                 return;
             }
+            
+            Anim.SetBool(_animIDJump, false);
+            Anim.SetBool(_animIDFreeFall, false);
 
             canDash = true;
             coyoteTime = GameManager.Instance.CoyoteTime;
@@ -100,6 +119,7 @@ namespace InGame.Player
                 currentJumpCnt++;
                 _vv = 15;
                 jumpBufferCnt = 0;
+                Anim.SetBool(_animIDJump, true);
             }
 
             if (GameManager.Instance.uim.Instance.JumpBtn.onPointerUp)
@@ -138,6 +158,11 @@ namespace InGame.Player
     {
         private void Start()
         {
+            _animIDSpeed = Animator.StringToHash("Speed");
+            _animIDGrounded = Animator.StringToHash("Grounded");
+            _animIDJump = Animator.StringToHash("Jump");
+            _animIDFreeFall = Animator.StringToHash("FreeFall");
+            
             GameManager.Instance.player.Instance = this;
         }
 
