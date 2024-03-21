@@ -5,45 +5,64 @@ using UnityEngine.EventSystems;
 
 namespace InGame.UI
 {
-    public class InputBtn : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+    public class InputBtn : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
     {
-        public bool onPointerDown;
-        public bool onPointerUp;
         public Action onDoubleClick;
 
-        public float delay;
-        
-        private bool _touched;
-        
-        public async void OnPointerDown(PointerEventData eventData)
-        {
-            if (_touched)
-            {
-                _touched = false;
-                onDoubleClick?.Invoke();
-                return;
-            }
+        [SerializeField] private bool enableDoubleClick;
 
-            Delay().Forget();
-            _touched = true;
+        public bool onPointer;
+        public bool onPointerDown;
+        public bool onPointerUp;
+        [SerializeField] private float doubleClickTime = 0.5f;
+
+        private bool _isClicked;
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            onPointer = true;
             onPointerDown = true;
-            onPointerUp = false;
-            await UniTask.Yield();
-            onPointerDown = false;
+            ResetPointerDown();
         }
 
-        public async void OnPointerUp(PointerEventData eventData)
+        public void OnPointerUp(PointerEventData eventData)
         {
-            onPointerDown = false;
+            onPointer = false;
             onPointerUp = true;
-            await UniTask.Yield();
-            onPointerUp = false;
+            ResetPointerUp();
         }
 
-        private async UniTaskVoid Delay()
+        public void OnPointerClick(PointerEventData eventData)
         {
-            await UniTask.WaitForSeconds(delay);
-            _touched = false;
+            if (!enableDoubleClick) return;
+            if (_isClicked)
+            {
+                onDoubleClick?.Invoke();
+                _isClicked = false;
+            }
+            else
+            {
+                _isClicked = true;
+                ResetClicked();
+            }
+        }
+
+        private async void ResetClicked()
+        {
+            await UniTask.WaitForSeconds(doubleClickTime);
+            _isClicked = false;
+        }
+
+        private async void ResetPointerDown()
+        {
+            await UniTask.Yield();
+            onPointerDown = false;
+        }
+
+        private async void ResetPointerUp()
+        {
+            await UniTask.Yield();
+            onPointerUp = false; 
         }
     }
 }

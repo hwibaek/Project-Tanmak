@@ -1,4 +1,5 @@
-﻿using InGame.Player;
+﻿using System;
+using InGame.Player;
 using InGame.UI;
 using UnityEngine;
 using Util;
@@ -42,6 +43,9 @@ namespace InGame
 
     public partial class GameManager
     {
+        [SerializeField] private Camera mainCam;
+        public Camera MainCam => mainCam;
+
         [SerializeField] private float coyoteTime;
         public float CoyoteTime => coyoteTime;
         
@@ -50,6 +54,9 @@ namespace InGame
 
         [SerializeField] private LayerMask groundLayer;
         public LayerMask GroundLayer => groundLayer;
+        
+        [SerializeField] private LayerMask enemyLayer;
+        public LayerMask EnemyLayer => enemyLayer;
     }
 
     #endregion
@@ -60,7 +67,14 @@ namespace InGame
     {
         private void Awake()
         {
+            mainCam = Camera.main;
+            
             Instance = this;
+        }
+
+        private void Start()
+        {
+            
         }
     }
 

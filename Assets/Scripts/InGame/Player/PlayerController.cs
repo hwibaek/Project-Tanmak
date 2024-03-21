@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using Cysharp.Threading.Tasks;
+using InGame.Player.Weapon;
 using UnityEngine;
 
 namespace InGame.Player
@@ -32,7 +35,12 @@ namespace InGame.Player
         private float _rotV;
         private float _vv;
 
+        private bool attacking;
+
         [SerializeField] private float speed;
+
+        [SerializeField] private WeaponBase weapon;
+        public WeaponBase Weapon => weapon;
 
         [SerializeField] private CharacterController cc;
         public CharacterController Cc => cc;
@@ -49,12 +57,17 @@ namespace InGame.Player
 
     public partial class PlayerController
     {
-        private void Rotate(float x, float y)
+        public void Rotate(float x, float y, float smoothTime = 0.05f)
         {
             _targetRot = Mathf.Atan2(x, y) * Mathf.Rad2Deg + CamArm.transform.eulerAngles.y;
             var rotation = Mathf.SmoothDampAngle(Body.eulerAngles.y, _targetRot, ref _rotV,
-                0.05f);
+                smoothTime);
             Body.rotation = Quaternion.Euler(0, rotation, 0);
+        }
+
+        public void ImmediateRotate(float x, float y)
+        {
+            Rotate(x, y, 0);
         }
         private void Move()
         {
@@ -105,6 +118,7 @@ namespace InGame.Player
 
         private void Jump()
         {
+            if (moveLock) return;
             if (GameManager.Instance.uim.Instance.JumpBtn.onPointerDown)
             {
                 jumpBufferCnt = GameManager.Instance.JumpBufferTime;
@@ -145,13 +159,32 @@ namespace InGame.Player
             while (timer < dashTime)
             {
                 timer += Time.deltaTime;
-                Cc.Move(dir * (dashPower * speed * dashDistance * Time.deltaTime));
+                Cc.Move(dir * (dashPower * speed * Time.deltaTime));
                 await UniTask.WaitForSeconds(Time.deltaTime);
             }
             dashing = false;
             _vv = 0;
             moveLock = false;
         }
+
+        private void Attack()
+        {
+            if (!GameManager.Instance.uim.Instance.AttackBtn.onPointerDown || attacking || GetTarget().ToList().Count <= 0) return;
+            AttackAsync();
+        }
+        public async void AttackAsync()
+        {
+            attacking = true;
+            await Weapon.Attack(this);
+            attacking = false;
+        }
+
+        public IEnumerable<Collider> GetTarget() =>
+            Physics.OverlapSphere(transform.position, weapon.AttackRange, GameManager.Instance.EnemyLayer, QueryTriggerInteraction.Ignore)
+                .OrderBy(col => Vector3.Distance(transform.position, col.transform.position))
+                .Take(Weapon.TargetCount);
+
+        public IEnumerable<Vector3> GetTargetScreenPos() => GetTarget().Select(col => GameManager.Instance.MainCam.WorldToScreenPoint(col.transform.position));
     }
 
     public partial class PlayerController
@@ -175,6 +208,7 @@ namespace InGame.Player
         {
             Move();
             Jump();
+            Attack();
         }
     }
 }
