@@ -18,9 +18,8 @@ namespace InGame.Player
         private int _animIDJump;
         private int _animIDFreeFall;
         
-        [SerializeField] private int currentJumpCnt;
         [SerializeField] private float coyoteTime;
-        [SerializeField] private float jumpBufferCnt;
+        [SerializeField] private float jumpBufferTime;
         [SerializeField] private bool fallChecker;
 
         public bool canDash;
@@ -81,12 +80,18 @@ namespace InGame.Player
             Cc.Move(targetDir * (targetSpeed * Time.fixedDeltaTime) + new Vector3(0, _vv * Time.fixedDeltaTime, 0));
             Anim.SetFloat(_animIDSpeed, targetSpeed);
         }
-        
-        private void GroundCheck()
+
+        private bool IsGround()
         {
             var spherePosition = transform.position;
             var grounded = Physics.CheckSphere(spherePosition, 0.28f, GameManager.Instance.GroundLayer,
                 QueryTriggerInteraction.Ignore);
+            return grounded;
+        }
+        
+        private void GroundCheck()
+        {
+            var grounded = IsGround();
             
             Anim.SetBool(_animIDGrounded, grounded);
             
@@ -96,10 +101,9 @@ namespace InGame.Player
                 {
                     coyoteTime -= Time.deltaTime;
                 }
-                else if (!fallChecker && currentJumpCnt <= 0)
+                else if (!fallChecker)
                 {
                     fallChecker = true;
-                    currentJumpCnt++;
                 }
                 _vv += Physics.gravity.y * Time.deltaTime * 2;
                 Anim.SetBool(_animIDFreeFall, true);
@@ -111,7 +115,6 @@ namespace InGame.Player
 
             canDash = true;
             coyoteTime = GameManager.Instance.CoyoteTime;
-            currentJumpCnt = 0;
             fallChecker = false;
             _vv = Mathf.Max(_vv, 0);
         }
@@ -121,28 +124,24 @@ namespace InGame.Player
             if (moveLock) return;
             if (GameManager.Instance.uim.Instance.JumpBtn.onPointerDown)
             {
-                jumpBufferCnt = GameManager.Instance.JumpBufferTime;
+                jumpBufferTime = GameManager.Instance.JumpBufferTime;
             }
-            else if (jumpBufferCnt > 0)
+            else if (jumpBufferTime > 0)
             {
-                jumpBufferCnt -= Time.deltaTime;
+                jumpBufferTime -= Time.deltaTime;
             }
             
-            if (jumpBufferCnt > 0 && currentJumpCnt < 2)
+            if (jumpBufferTime > 0 && IsGround())
             {
-                currentJumpCnt++;
                 _vv = 15;
-                jumpBufferCnt = 0;
+                jumpBufferTime = 0;
                 Anim.SetBool(_animIDJump, true);
             }
 
-            if (GameManager.Instance.uim.Instance.JumpBtn.onPointerUp)
+            if (GameManager.Instance.uim.Instance.JumpBtn.onPointerUp && Cc.velocity.y > 0)
             {
-                coyoteTime = GameManager.Instance.CoyoteTime;
-                if (Cc.velocity.y > 0)
-                {
-                    _vv *= 0.5f;
-                }
+                coyoteTime = 0;
+                _vv *= 0.5f;
             }
         }
 

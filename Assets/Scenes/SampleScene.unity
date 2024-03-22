@@ -788,9 +788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3edbbb6e7a26d4bbf622c8d75b6055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentJumpCnt: 0
   coyoteTime: 0
-  jumpBufferCnt: 0
+  jumpBufferTime: 0
   fallChecker: 0
   canDash: 0
   dashPower: 12
@@ -2180,7 +2179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCam: {fileID: 330585545}
   coyoteTime: 0.1
-  jumpBufferTime: 0.1
+  jumpBufferTime: 0.25
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

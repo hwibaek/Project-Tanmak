@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,6 +18,9 @@ namespace InGame.UI
         [SerializeField] private float doubleClickTime = 0.5f;
 
         private bool _isClicked;
+
+        private CancellationTokenSource _downCancel;
+        private CancellationTokenSource _upCancel;
 
         public void OnPointerDown(PointerEventData eventData)
         {
@@ -55,14 +59,18 @@ namespace InGame.UI
 
         private async void ResetPointerDown()
         {
-            await UniTask.Yield();
+            _downCancel?.Cancel();
+            _downCancel = new CancellationTokenSource();
+            await UniTask.Yield(_downCancel.Token);
             onPointerDown = false;
         }
 
         private async void ResetPointerUp()
         {
-            await UniTask.Yield();
-            onPointerUp = false; 
+            _upCancel?.Cancel();
+            _upCancel = new CancellationTokenSource();
+            await UniTask.Yield(_upCancel.Token);
+            onPointerUp = false;
         }
     }
 }
